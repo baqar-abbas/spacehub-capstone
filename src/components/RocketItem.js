@@ -1,19 +1,15 @@
 import React from 'react';
-import rocket from '../assets/rocket.jpg';
+import PropTypes from 'prop-types';
 
-const RocketItem = () => (
+const RocketItem = ({ name, description, img }) => (
   <>
     <article className="rocket">
-      <img src={rocket} alt="rocketimage" />
-      ;
+      <div className="image-container">
+        <img src={img} alt="rocketimage" />
+      </div>
       <div className="detail-container">
-        <h2>Falcon 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus necessitatibus
-          vel veniam molestiae eligendi mollitia deleniti inventore dolore nemo velit aliquam
-          ea facere itaque, illo voluptate maxime, pariatur nobis eveniet.Proin condimentum urna
-          nec massa scelerisque, illo voluptate maxime.
-        </p>
+        <h2 className="headingh2">{name}</h2>
+        <p>{description}</p>
         <button type="button" id="reserve-btn">
           Reserve Rocket
         </button>
@@ -21,5 +17,11 @@ const RocketItem = () => (
     </article>
   </>
 );
+
+RocketItem.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+}.isRequired;
 
 export default RocketItem;
