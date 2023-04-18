@@ -94,9 +94,9 @@ The Project will be deployed after final approval.
 
 **Yosef Geda**
 
-- GitHub: [@codeWithHyder](https://github.com/yosefgeda)
-- Twitter: [@Hyder](https://twitter.com/)
-- LinkedIn: [Hyder](https://www.linkedin.com/in//)
+- GitHub: [@yosefgeda](https://github.com/yosefgeda)
+- Twitter: [@yosefgeda](https://twitter.com/)
+- LinkedIn: [yosefgeda](https://www.linkedin.com/in//)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
