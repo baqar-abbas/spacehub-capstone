@@ -83,6 +83,7 @@ nav > ul a.active {
   border-radius: 3px;
   font-size: 10px;
 }
+<<<<<<< HEAD
 
 /* missions css */
 
@@ -103,3 +104,5 @@ nav > ul a.active {
   grid-column-start: 2;
   grid-column-end: 6;
 }
+=======
+>>>>>>> dev
