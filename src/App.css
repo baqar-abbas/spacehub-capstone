@@ -47,24 +47,6 @@ nav > ul a.active {
   padding-right: 1rem;
 }
 
-.mission-headers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.mission-headers div {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mission-disc {
-  background-color: aqua;
-  grid-column-start: 2;
-  grid-column-end: 6;
-}
-
 .rocket-holder {
   padding: 2rem 4rem;
   display: flex;
