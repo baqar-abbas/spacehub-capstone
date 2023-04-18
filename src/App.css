@@ -83,3 +83,23 @@ nav > ul a.active {
   border-radius: 3px;
   font-size: 10px;
 }
+
+/* missions styling */
+
+.mission-headers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mission-headers div {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-disc {
+  background-color: aqua;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
