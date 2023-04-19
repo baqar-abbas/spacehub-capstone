@@ -19,7 +19,12 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "no-param-reassign": 0
+      "no-param-reassign": 0,
+      "array-callback-return": "off",
+      "react/prop-types": "off",
+      "react/destructuring-assignment": "off",
+      "max-len": "off",
+      "no-return-assign": "off"
     },
     "ignorePatterns": [
       "dist/",

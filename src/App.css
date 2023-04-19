@@ -5,6 +5,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -60,11 +61,6 @@ nav > ul a.active {
   grid-template-columns: 2fr 10fr;
   gap: 2.5rem;
 }
-
-/* .rocket > img {
-  width: 400px;
-  height: 130px;
-} */
 
 .image-container {
   width: 300px;
@@ -136,13 +132,10 @@ nav > ul a.active {
 .mission-headers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: 1px solid rgb(82, 80, 80);
-  grid-gap: 1px;
-  background-color: rgb(82, 80, 80);
 }
 
 .mission-headers div {
-  background-color: white;
+  border: 1px solid rgb(82, 80, 80);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -150,9 +143,12 @@ nav > ul a.active {
 }
 
 .mission-disc {
-  background-color: aqua;
   grid-column-start: 2;
   grid-column-end: 7;
+}
+
+.alternate-clr:nth-child(odd) {
+  background-color: rgb(221, 218, 218);
 }
 
 .subscribe-btn {
@@ -162,7 +158,6 @@ nav > ul a.active {
 }
 
 .active-toggle {
-  background-color: rgb(145, 139, 139);
   padding: 5px 8px;
   color: white;
   font-weight: bold;
@@ -171,8 +166,6 @@ nav > ul a.active {
 
 main {
   display: flex;
-
-  /* align-items: center; */
   justify-content: space-between;
   padding-left: 3rem;
   padding-right: 3rem;

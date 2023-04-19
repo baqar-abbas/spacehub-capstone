@@ -1,34 +1,30 @@
-/* eslint-disable */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://api.spacexdata.com/v3/missions'
+const url = 'https://api.spacexdata.com/v3/missions';
 
-export const fetchMission = createAsyncThunk('post/fetchPost', async () => {
-  return fetch(url)
-  .then(res => res.json());
-})
+export const fetchMission = createAsyncThunk('post/fetchPost', async () => fetch(url)
+  .then((res) => res.json()));
 
 const initialState = {
   missionsData: [],
   isSubscribed: true,
   isLoading: false,
-  error: ''
+  error: '',
 };
 
 export const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    subscribe(state, {payload}) {
+    subscribe(state, { payload }) {
       state.missionsData.map((mission) => {
         if (mission.mission_id === payload) {
           mission.isSubscribed = !mission.isSubscribed;
-          console.log(mission.isSubscribed, payload)
         }
-      })
+      });
     },
   },
-  extraReducers: (builder) =>{
+  extraReducers: (builder) => {
     builder.addCase(fetchMission.pending, (state) => {
       state.isLoading = true;
     });
@@ -39,9 +35,9 @@ export const missionsSlice = createSlice({
     builder.addCase(fetchMission.rejected, (state, action) => {
       state.isLoading = false;
       state.error = action.error.message;
-    })
-  }
+    });
+  },
 });
 
-export const { subscribe } = missionsSlice.actions
+export const { subscribe } = missionsSlice.actions;
 export default missionsSlice.reducer;
