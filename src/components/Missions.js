@@ -15,6 +15,7 @@ function Missions() {
   const data = useSelector((store) => store.missions.missionsData);
   const isLoading = useSelector((store) => store.missions.isLoading)
   const error = useSelector((store) => store.missions.error)
+  const isSubscribed = useSelector((store) => store.missions.isSubscribed)
   
   if (isLoading) {
     return 'loading...'
@@ -24,11 +25,11 @@ function Missions() {
   };
 
   return (
-    <div >
+    <div className='missions-container'>
       <MissionItemHead />
       <ul>
         {data.map((item) => 
-            <MissionItems key={item.mission_id} item={item} />
+            <MissionItems key={item.mission_id} item={item} isSubscribed={isSubscribed}/>
         )}
       </ul>
     </div>

@@ -10,7 +10,7 @@ export const fetchMission = createAsyncThunk('post/fetchPost', async () => {
 
 const initialState = {
   missionsData: [],
-  isSubscribed: false,
+  isSubscribed: true,
   isLoading: false,
   error: ''
 };
@@ -19,8 +19,13 @@ export const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    subscribe(state) {
-      state.isSubscribed = true;
+    subscribe(state, {payload}) {
+      state.missionsData.map((mission) => {
+        if (mission.mission_id === payload) {
+          mission.isSubscribed = !mission.isSubscribed;
+          console.log(mission.isSubscribed, payload)
+        }
+      })
     },
   },
   extraReducers: (builder) =>{
@@ -38,4 +43,5 @@ export const missionsSlice = createSlice({
   }
 });
 
+export const { subscribe } = missionsSlice.actions
 export default missionsSlice.reducer;
