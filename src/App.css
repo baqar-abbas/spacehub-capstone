@@ -168,3 +168,46 @@ nav > ul a.active {
   font-weight: bold;
   border-radius: 3px;
 }
+
+main {
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+.subscribed-missions,
+.subcribed-rockets {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.subscribed-missions h3,
+.subcribed-rockets h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.subscribed-missions ul,
+.subcribed-rockets ul {
+  display: block;
+  border: 2px solid #e8e8e8;
+  width: 100%;
+  border-bottom: none;
+}
+
+.subscribed-missions ul li,
+.subcribed-rockets ul li {
+  border-bottom: 2px solid #e8e8e8;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+.margin {
+  margin-left: 5rem;
+}
