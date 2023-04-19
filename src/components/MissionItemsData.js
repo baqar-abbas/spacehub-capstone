@@ -10,7 +10,6 @@ export const MissionItems = (props) => {
     const handleClick = () => {
         dispatch(subscribe(props.item.mission_id));
         setSubscribed((prev) => prev = !prev)
-        console.log(subscribed)
     }
 
     const style = {
