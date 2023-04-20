@@ -142,6 +142,10 @@ nav > ul a.active {
   align-items: center;
 }
 
+.mission-headers div p {
+  font-weight: bold;
+}
+
 .mission-disc {
   grid-column-start: 2;
   grid-column-end: 7;

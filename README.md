@@ -95,8 +95,8 @@ The Project will be deployed after final approval.
 **Yosef Geda**
 
 - GitHub: [@yosefgeda](https://github.com/yosefgeda)
-- Twitter: [@yosefgeda](https://twitter.com/)
-- LinkedIn: [yosefgeda](https://www.linkedin.com/in//)
+- Twitter: [@yosefgeda](https://twitter.com/yosefgeda)
+- LinkedIn: [yosefgeda](https://www.linkedin.com/in/yosefgeda/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
