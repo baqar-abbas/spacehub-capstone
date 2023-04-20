@@ -33,7 +33,6 @@ const MissionItems = (props) => {
         </div>
       </div>
     </div>
-
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { MissionItemHead } from './missionItemsHead';
+import MissionItemHead from './missionItemsHead';
 import MissionItems from './MissionItemsData';
 import { fetchMission } from '../redux/missions/missionsSlice';
 
