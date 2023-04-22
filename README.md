@@ -48,7 +48,7 @@ React Redux and API
 
 ## 🚀 Live Demo <a name="live-demo"> </a>
 
-- [Live Demo](Will be available after final approval)
+- [Live Demo](https://spacetravellerhubcapstone.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
